@@ -29,12 +29,29 @@ The current version has been developed using Alfresco Community 6.1 and Alfresco
 
 ## Building
 
-```
+```sh
 $ mvn clean package
 
-$ $ ls target/*.jar
+$ ls target/*.jar
 target/auditable-aspect-disable-1.0.0.jar
 ```
+
+## Testing
+
+Build & Start
+
+```sh
+$ ./run.sh build_start
+```
+
+Alfresco Repository is available at http://localhost:8080/alfresco
+
+Stop
+
+```sh
+$ ./run.sh stop
+```
+
 ## Deploying
 
 Copy `auditable-aspect-disable-1.0.0.jar` to `platform/modules` folder in your Alfresco Repository installation and re-start the service.
